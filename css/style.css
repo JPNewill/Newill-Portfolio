@@ -526,3 +526,71 @@ main hr, main .section-divider { display: none !important; }
 }
 
 /* CONTACT BUTTON REFINEMENT END */
+/* CONTACT TILE FIX START */
+
+.contact-button-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    margin-top: 36px !important;
+    width: 100%;
+}
+
+.contact-button-grid .contact-tile {
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    min-width: 0;
+    min-height: 145px !important;
+    padding: 24px !important;
+    background: #7041B9 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #7041B9 !important;
+    border-radius: 4px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    transition: background .2s ease, transform .2s ease;
+}
+
+.contact-button-grid .contact-tile:hover {
+    background: #5D319F !important;
+    transform: translateY(-3px);
+}
+
+.contact-button-grid .contact-tile strong {
+    display: block;
+    color: #FFFFFF !important;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact-button-grid .contact-tile-icon {
+    display: block;
+    color: #FFFFFF !important;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.contact-button-grid .contact-tile:focus-visible {
+    outline: 3px solid #7041B9;
+    outline-offset: 4px;
+}
+
+@media (max-width: 700px) {
+    .contact-button-grid {
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+    }
+
+    .contact-button-grid .contact-tile {
+        min-height: 110px !important;
+    }
+}
+
+/* CONTACT TILE FIX END */
