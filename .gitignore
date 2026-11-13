@@ -1,0 +1,14 @@
+backups/
+website-audit.txt
+*.log
+*.tmp
+*.bak
+*.ps1
+.env
+.env.*
+.venv/
+venv/
+__pycache__/
+node_modules/
+.DS_Store
+Thumbs.db
