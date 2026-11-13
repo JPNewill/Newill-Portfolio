@@ -352,3 +352,48 @@
   }
 }
 /* END HOMEPAGE REFINEMENT */
+/* BEGIN PORTFOLIO V2 RELEASE 1 */
+.page-intro{max-width:950px}.page-intro h1{margin-bottom:24px}.page-lead{font-size:clamp(18px,2vw,22px);color:var(--muted);max-width:790px;line-height:1.75}.page-prose{max-width:720px}.page-prose p{color:var(--muted);line-height:1.9;margin:0 0 22px}.gallery-heading{font-size:clamp(29px,3vw,42px);margin:50px 0 24px}.contact-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:50px}.contact-option{border:1px solid var(--border);background:var(--surface);border-radius:9px;padding:25px;display:flex;flex-direction:column;gap:14px}.contact-option strong{font-size:16px}.contact-option:hover{border-color:var(--accent)}.nav-links a[aria-current="page"]{color:var(--accent);font-weight:700}.nav-links a:focus-visible,.contact-option:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+@media(max-width:700px){.contact-options{grid-template-columns:1fr}.gallery-heading{margin-top:35px}}
+/* END PORTFOLIO V2 RELEASE 1 */
+/* PORTFOLIO V2 CONSISTENT BACKGROUND */
+body,
+main,
+.section,
+.section.alt,
+.site-header,
+.footer {
+    background-color: var(--bg);
+}
+
+/* Keep cards visually distinct from the background */
+.project-card,
+.contact-option {
+    background-color: var(--surface);
+}
+/* PORTFOLIO V2 SECTION DIVIDERS START */
+
+/* Remove horizontal lines between main content sections */
+main > section,
+main section,
+.section,
+.section + .section {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+/* Hide explicit horizontal rules in main content */
+main hr,
+main .divider,
+main .section-divider {
+    display: none !important;
+}
+
+/* Remove decorative lines generated around sections */
+main section::before,
+main section::after {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+/* PORTFOLIO V2 SECTION DIVIDERS END */
