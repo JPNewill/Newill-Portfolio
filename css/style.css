@@ -594,3 +594,26 @@ main hr, main .section-divider { display: none !important; }
 }
 
 /* CONTACT TILE FIX END */
+/* FORCE LIGHT MODE START */
+
+:root,
+html,
+html[data-theme="light"],
+html[data-theme="dark"] {
+    color-scheme: light !important;
+
+    --bg: #F8F8F6 !important;
+    --surface: #FFFFFF !important;
+    --text: #202020 !important;
+    --muted: #59545D !important;
+    --accent: #7041B9 !important;
+    --border: #D9D5DF !important;
+}
+
+html,
+body {
+    background-color: #F8F8F6 !important;
+    color: #202020 !important;
+}
+
+/* FORCE LIGHT MODE END */
