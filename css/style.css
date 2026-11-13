@@ -617,3 +617,35 @@ body {
 }
 
 /* FORCE LIGHT MODE END */
+/* MOBILE LIGHT MODE LOCK START */
+
+:root,
+html,
+html[data-theme="dark"],
+html[data-theme="light"] {
+    color-scheme: only light !important;
+    --bg: #F8F8F6 !important;
+    --surface: #FFFFFF !important;
+    --text: #202020 !important;
+    --muted: #59545D !important;
+    --accent: #7041B9 !important;
+    --border: #D9D5DF !important;
+}
+
+html,
+body {
+    background: #F8F8F6 !important;
+    color: #202020 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root,
+    html,
+    body {
+        color-scheme: only light !important;
+        background: #F8F8F6 !important;
+        color: #202020 !important;
+    }
+}
+
+/* MOBILE LIGHT MODE LOCK END */

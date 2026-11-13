@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html data-theme="light" lang="en">
-<head>
+<head><script id="force-light-early">
+document.documentElement.setAttribute("data-theme", "light");
+try { localStorage.setItem("theme", "light"); } catch (e) {}
+</script><meta name="color-scheme" content="light">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Engineering resume of Josiah Newill, aerospace engineering student at Iowa State University.">
   <title>Resume | Josiah Newill</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20261112-213554">
   <style>
     .resume-container {
       max-width: 850px;
@@ -100,7 +103,10 @@
 <meta name="twitter:image" content="https://jpnewill.com/assets/portrait.png">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header"><script id="force-light-early">
+document.documentElement.setAttribute("data-theme", "light");
+try { localStorage.setItem("theme", "light"); } catch (e) {}
+</script><meta name="color-scheme" content="light">
   <nav class="container nav" aria-label="Main navigation">
     <a class="brand" href="/"><strong>JOSIAH NEWILL</strong><small>AEROSPACE ENGINEERING</small></a>
     <div class="nav-links">

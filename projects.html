@@ -1,15 +1,21 @@
 <!doctype html>
-<html data-theme="light" lang="en"><head>
+<html data-theme="light" lang="en"><head><script id="force-light-early">
+document.documentElement.setAttribute("data-theme", "light");
+try { localStorage.setItem("theme", "light"); } catch (e) {}
+</script><meta name="color-scheme" content="light">
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Completed and in-progress engineering projects by Josiah Newill.">
 <title>Projects | Josiah Newill</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css"><script defer src="js/main.js"></script>
+<link rel="stylesheet" href="css/style.css?v=20261112-213554"><script defer src="js/main.js"></script>
 <link rel="canonical" href="https://jpnewill.com/projects">
 <link rel="icon" type="image/svg+xml" href="assets/JN_monogram_violet.svg?v=20261113">
 </head><body>
-<header class="site-header"><nav class="container nav" aria-label="Main navigation">
+<header class="site-header"><script id="force-light-early">
+document.documentElement.setAttribute("data-theme", "light");
+try { localStorage.setItem("theme", "light"); } catch (e) {}
+</script><meta name="color-scheme" content="light"><nav class="container nav" aria-label="Main navigation">
 <a class="brand" href="/"><strong>JOSIAH NEWILL</strong><small>AEROSPACE ENGINEERING</small></a>
 <div class="nav-links"><a href="/">Home</a><a href="/about" >About</a><a href="/projects" aria-current="page">Projects</a><a href="/resume">Resume</a><a href="/contact" >Contact</a></div>
 </nav></header>
