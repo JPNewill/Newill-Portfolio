@@ -397,6 +397,7 @@ main section::after {
 }
 
 /* PORTFOLIO V2 SECTION DIVIDERS END */
+
 /* BEGIN PORTFOLIO V2 VISUAL FIXES */
 /* One page background in both themes; cards retain a contrasting surface. */
 html, body, main, .section, .section.alt, .alt, .site-header, .footer {
