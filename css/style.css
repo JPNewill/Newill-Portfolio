@@ -437,3 +437,92 @@ main hr, main .section-divider { display: none !important; }
   .home-contact-links a { flex: 1 1 140px; }
 }
 /* END PORTFOLIO V2 VISUAL FIXES */
+/* CONTACT BUTTON REFINEMENT START */
+
+/* Contact page button grid */
+.contact-options {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px !important;
+    margin-top: 32px !important;
+    align-items: stretch;
+}
+
+/* Square-cornered rectangular contact buttons */
+.contact-option {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    min-height: 120px;
+    padding: 24px 18px !important;
+    border-radius: 4px !important;
+    background: #7041B9 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #7041B9 !important;
+    text-decoration: none !important;
+    transition: transform .2s ease, background .2s ease;
+}
+
+.contact-option:hover {
+    transform: translateY(-3px);
+    background: #5D319F !important;
+}
+
+.contact-option strong,
+.contact-option .eyebrow,
+.contact-option span {
+    color: #FFFFFF !important;
+}
+
+/* Homepage contact buttons */
+.home-contact-links {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 16px !important;
+    margin-top: 28px !important;
+}
+
+.home-contact-links a {
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+    min-height: 52px;
+    padding: 14px 24px !important;
+    border-radius: 4px !important;
+    background: #7041B9 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #7041B9 !important;
+    text-decoration: none !important;
+    font-weight: 600;
+}
+
+.home-contact-links a:hover {
+    background: #5D319F !important;
+}
+
+.contact-option:focus-visible,
+.home-contact-links a:focus-visible {
+    outline: 3px solid #7041B9;
+    outline-offset: 4px;
+}
+
+@media (max-width: 700px) {
+    .contact-options {
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+    }
+
+    .contact-option {
+        min-height: 90px;
+    }
+
+    .home-contact-links a {
+        flex: 1 1 100%;
+    }
+}
+
+/* CONTACT BUTTON REFINEMENT END */
