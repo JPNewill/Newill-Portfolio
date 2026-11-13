@@ -397,3 +397,42 @@ main section::after {
 }
 
 /* PORTFOLIO V2 SECTION DIVIDERS END */
+/* BEGIN PORTFOLIO V2 VISUAL FIXES */
+/* One page background in both themes; cards retain a contrasting surface. */
+html, body, main, .section, .section.alt, .alt, .site-header, .footer {
+  background-color: var(--bg) !important;
+}
+.section.alt, .alt { border-top: 0 !important; border-bottom: 0 !important; }
+main > section { border-top: 0 !important; border-bottom: 0 !important; }
+/* Reduce excessive gaps without collapsing content or breaking mobile layout. */
+.section { padding-block: 48px !important; }
+.hero { min-height: 0 !important; padding-block: 48px !important; }
+.section-grid { gap: clamp(20px, 4vw, 54px) !important; }
+.page-intro { margin-bottom: 0 !important; }
+.page-intro h1 { margin-bottom: 16px !important; }
+.gallery-heading { margin: 32px 0 18px !important; }
+.home-project-more { margin-top: 22px; }
+main hr, main .section-divider { display: none !important; }
+/* Consistent button appearance for contact destinations. */
+.home-contact-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.home-contact-links a, .home-contact-links .contact-button {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: 11px 20px; border-radius: 6px;
+  background: var(--accent); color: #fff !important;
+  border: 1px solid var(--accent); font-weight: 600; text-decoration: none;
+}
+.home-contact-links a:hover { filter: brightness(1.12); }
+.contact-options { gap: 14px !important; margin-top: 28px !important; }
+.contact-option { border-radius: 7px !important; padding: 18px 22px !important;
+  background: var(--accent) !important; color: #fff !important; }
+.contact-option .eyebrow, .contact-option strong { color: #fff !important; }
+.contact-option:hover { filter: brightness(1.12); }
+.contact-option:focus-visible, .home-contact-links a:focus-visible {
+  outline: 3px solid var(--accent); outline-offset: 3px;
+}
+@media (max-width: 600px) {
+  .section { padding-block: 36px !important; }
+  .hero { padding-block: 36px !important; }
+  .home-contact-links a { flex: 1 1 140px; }
+}
+/* END PORTFOLIO V2 VISUAL FIXES */
